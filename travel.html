@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
+
+    <link href="./temp.css" rel="stylesheet">
+
+<!--     CSS Reset : BEGIN -->
+    <style>
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        font-family:
+      }
+
+    </style>
+<!--     CSS Reset : END -->
+
+
+<!--     CSS Main : START -->
+    <style>
+      * {
+                  outline: 1px solid limegreen;
+        /*          background: rgb(0 100 0 / 0.1);*/
+      }
+
+      .logo {
+        text-align: left;
+        width: 40%;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+      .logo h1 {
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .nevigation {
+        font-family: 'Nunito Sans', sans-serif;
+        text-align: right;
+        width: 60%;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      .nevigation a {
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 6px;
+        font-weight: 700;
+        color: rgba(0,0,0,.6);
+
+      }
+
+      .section-heading {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #ffffff;
+        font-size: 40px;
+        margin-bottom: 0;
+        line-height: 1.2;
+      }
+
+      .section-heading h2 {
+        text-align: center;
+        font-weight: 900;
+        font-size: 40px;
+      }
+
+      .section-heading2 {
+        background-color: rgba(0,0,0,.8);
+        padding: 40px;
+        color: #ffffff;
+
+      }
+
+      .section-heading2 h3 {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.2;
+      }
+
+      .section-heading2 p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.8;
+        color: rgba(255,255,255,.8);
+      }
+
+      .section-heading3 h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000000;
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: 700;
+      }
+      .section-heading3-h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        color: #000;
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0 10px;
+      }
+      .section-heading3-p1 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        padding: 0px 10px;
+        margin-top: 0;
+        margin-bottom: 23px;
+      }
+
+      .section-heading3-p2 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        padding: 0px 10px;
+        margin-top: 0;
+        margin-bottom: 27px;
+      }
+
+      .img-section-left {
+        padding: 20px 10px 10px;
+      }
+
+
+      .img-section-left h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000;
+        line-height: 1.8;
+        font-weight: 700;
+        font-size: 17.55px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0 5px;
+      }
+
+      .img-section-left p {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        margin: 0;
+        padding: 0 5px;
+      }
+
+      .img-section-right {
+        padding: 20px 10px 10px;
+      }
+
+      .img-section-right h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000;
+        line-height: 1.8;
+        font-weight: 700;
+        font-size: 17.55px;
+        margin-top: 10px;
+        margin-bottom: 0;
+        padding: 0 5px;
+      }
+
+      .img-section-right p {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        margin: 0;
+        padding: 0 5px;
+      }
+
+      .num {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 34px;
+        margin-bottom: 20px;
+        padding: 0 5px;
+      }
+
+      .text {
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+        padding: 0 5px;
+      }
+
+      .btn {
+        padding: 10px 15px;
+        border-radius: 5px;
+        background: #f5564e;
+        color: #ffffff;
+        margin: 0 2px;
+        cursor: pointer;
+        display: inline-block;
+        font-family: 'Nunito Sans', sans-serif;
+      }
+
+      .para h2 {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #000000;
+        font-size: 24px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 700;
+        padding: 0 25px;
+        margin-bottom: 10px;
+      }
+
+      .para h3 {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 600;
+        color: #000000;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+        padding: 0 25px;
+        line-height: 1.4;
+      }
+
+      .para p {
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.4;
+        color: rgba(0,0,0,.4);
+        padding: 0 25px;
+      }
+
+      .footer {
+        border: 40px;
+        color: rgba(255,255,255,.5);
+        padding: 0 2px;
+      }
+
+      .row9 h2 {
+        color: #ffffff;
+        font-size: 20px;
+        line-height: 1.8;
+        padding: 2px;
+      }
+      .row9 p {
+        font-family: 'Nunito Sans', sans-serif;
+        color: rgba(255,255,255,.5);
+        font-size: 15px;
+        line-height: 1.8;
+        font-weight: 400;
+        padding: 2px;
+
+      }
+
+      .ta-fixed-auto {
+        table-layout: fixed;
+      }
+    </style>
+<!--     CSS Main : END -->
+
+<!--    Mob Responsive : START-->
+    <style>
+      @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+        .ta-fixed-auto {
+          table-layout: auto;
+        }
+
+        .ta-block {
+          display: block;
+        }
+
+        .ta-full-width {
+          width: 100%;
+          float: left;
+        }
+
+        .center {
+          text-align: center;
+        }
+
+        .contact-mr {
+          margin-right: 6px;
+        }
+
+        .row5-mb {
+          margin-bottom: 40px;
+        }
+
+        .row8-p {
+          padding: 20px 25px 10px 25px;
+        }
+
+        .row8-m {
+          margin: 0;
+        }
+
+      }
+    </style>
+<!--        Mob Responsive : END-->
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; font-family: sans-serif; background-color: #222222;">
+    <center style="width: 100%; background-color: #f1f1f1;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+
+          <!-- Main Row - 1: START -->
+          <tr>
+            <td style="padding: 15px 37.5px; background-color: #ffffff">
+              <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td class="logo ta-block ta-full-width center">
+                    <h1>TRAVEL</h1>
+                  </td>
+                  <td  style="padding: 13.4px 0;" class="nevigation ta-block ta-full-width center">
+                    <a href="#" style="line-height: 1.8;">HOME</a>
+                    <a href="#" style="line-height: 1.8;">ABOUT</a>
+                    <a href="#" style="line-height: 1.8;">WORKS</a>
+                    <a href="#" style="line-height: 1.8;">BLOG</a>
+                    <a href="#" style="line-height: 1.8;" class="contact-mr">CONTACT</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 1: END -->
+
+          <!-- Main Row - 2: START -->
+          <tr>
+            <td valign="middle" style="background-image: url(https://imgur.com/r3Uny4o.jpg); background-size: cover; height: 400px; display: block;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+                <tr>
+                  <td style="background-color: rgba(0, 0, 0, 0.3);">
+                    <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+                        <td class="section-heading" style="height: 400px; padding: 0 60px">
+                          <h2 style="text-align: center;">Be a Traveler not a Tourist</h2>
+                        </td>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Main Row - 2: END -->
+
+          <!-- Main Row - 3: START -->
+          <tr>
+            <td class="section-heading2">
+              <h3>Welcome To Travel Agency</h3>
+              <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            </td>
+          </tr>
+          <!-- Main Row - 3: END -->
+
+          <!-- Main Row - 4: START -->
+          <tr>
+            <td style="background-color: #ffffff; padding: 30px;">
+              <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%" class="ta.fixed-auto">
+                 <tr>
+                   <td class="section-heading3 ta-block" colspan="2">
+                     <h3 style="padding: 0 20px;">Best Destination</h3>
+                     <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                     </p>
+                  </td>
+                 </tr>
+                 <tr>
+                   <td class="img-section-left ta-block">
+                     <img src="https://imgur.com/sJTqGvD.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                   <td class="img-section-right ta-block">
+                     <img src="https://imgur.com/UmzveUw.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="img-section-left ta-block">
+                     <img src="https://imgur.com/5Z9PZvU.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                   <td class="img-section-right ta-block">
+                     <img src="https://imgur.com/TcESljm.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="img-section-left ta-block">
+                     <img src="https://imgur.com/lXIsyX3.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                   <td class="img-section-right ta-block">
+                     <img src="https://imgur.com/qJc0YqW.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                 </tr>
+                 <tr>
+                   <td class="img-section-left ta-block">
+                     <img src="https://imgur.com/uJjOArI.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                   <td class="img-section-right ta-block">
+                     <img src="https://imgur.com/bsWtV9f.jpg" alt="a" style="width: 100%; display: block;">
+                     <h3>Gurtnellen, Swetzerland</h3>
+                     <p>10 days tour</p>
+                   </td>
+                 </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 4: END -->
+
+          <!-- Main Row - 5: START -->
+          <tr>
+            <td valign="middle" style="background: #000 url(https://imgur.com/r3Uny4o.jpg); height: 200px; background-size: cover;">
+              <table valign="middle" cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                  <td style="background-color: rgb(0, 0, 0, 0.3); height: 200px;">
+                    <table valign="middle" cellspacing="0" cellpadding="0" border="0" width="100%" style="text-align: center; color: #ffffff; height: 200px; table-layout: fixed;">
+                      <tr>
+                        <td class="ta-block">
+                          <h3 class="num">200</h3>
+                          <p class="text">Amezing Deals</p>
+                        </td>
+                        <td class="ta-block">
+                          <h3 class="num">1200</h3>
+                          <p class="text">Sold Tours</p>
+                        </td>
+                        <td class="ta-block">
+                          <h3 class="num">1000</h3>
+                          <p class="text">Happy Traveler</p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 5: END -->
+
+          <!-- Main Row - 6: START -->
+          <tr>
+            <td style="padding: 40px 30px; background-color: #fff; ">
+              <table valing="middle" cellpadding="0" cellspacing="0" width="100%" style="text-align: center;" class="ta-fixed-auto">
+                <tr>
+                  <td colspan="2" class="section-heading3 heading-blog ta-block ta-full-width">
+                    <div style="padding: 0 10px">
+                      <h2 style="font-size: 24px; margin-top: 0; line-height: 1.4; font-weight: 700; color: #000000; font-family: 'Nunito Sans', sans-serif; padding: 0 30px;">Our Blog</h2>
+                      <p style="margin-top: 30px; margin-bottom: 45px; ">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="section-heading3 ta-block ta-full-width" style="text-align: left;">
+                    <div style="padding: 0 10px;">
+                      <img src="https://imgur.com/KMgal7S.jpg" alt="" style="width: 100%; display: block;">
+                      <p style="font-family: 'Nunito Sans', sans-serif; color: rgba(0,0,0,.4); text-transform: uppercase; font-size: 14px; margin-top: 40px; padding: 2px;">POSTED ON FEB 18, 2019 FOOD</p>
+                      <h3 style="font-size: 16px; font-weight: 600; color: #000000; margin-top: 0; padding: 0 2px;">Business Key to Success</h3>
+                      <p style="padding: 0 2px;">Far far away, behind the word mountains, far from the countries</p>
+                      <span class="btn row5-mb">Read more</span>
+                    </div>
+                  </td>
+                  <td class="section-heading3 ta-block ta-full-width" style="text-align: left;">
+                    <div style="padding: 0 10px;">
+                      <img src="https://imgur.com/YrQIw4W.jpg" alt="" style="width: 100%; display: block;">
+                      <p style="font-family: 'Nunito Sans', sans-serif; color: rgba(0,0,0,.4); text-transform: uppercase; font-size: 14px; margin-top: 40px; padding: 2px;">POSTED ON FEB 18, 2019 FOOD</p>
+                      <h3 style="font-size: 16px; font-weight: 600; color: #000000; margin-top: 0; padding: 0 2px;">Business Key to Success</h3>
+                      <p style="padding: 0 2px;">Far far away, behind the word mountains, far from the countries</p>
+                      <span class="btn">Read more</span>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 6: END -->
+
+          <!-- Main Row - 7: START -->
+          <tr>
+            <td style="padding: 40px 30px; background: #fafafa;">
+              <table valing="middle" cellpadding="0" cellspacing="0" width="100%" class="ta-fixed-auto">
+                <tr>
+                  <td colspan="2" class="section-heading3 heading-blog ta-block ta-full-width">
+                    <h2 style="font-size: 24px; margin-top: 0; line-height: 1.4; font-weight: 700; color: #000000; font-family: 'Nunito Sans', sans-serif;">Happy Tourist</h2>
+                    <p style="margin-top: 30px; margin-bottom: 45px;">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="ta-block ta-full-width" style="text-align: left;">
+                    <div class="center">
+                      <img src="https://imgur.com/KMjbJQD.jpg" alt="" style="width: 100px; max-width: 600px; margin-bottom: 20px; border-radius: 50%; display: inline-block;">
+                      <h3 class="section-heading3-h3">Ronald Tuff</h3>
+                      <p class="section-heading3-p1">Businessman</p>
+                      <p class="section-heading3-p2">Far far away, behind the word mountains, far from the countries</p>
+                    </div>
+                  </td>
+                  <td class="ta-block ta-full-width" style="text-align: left;">
+                    <div class="center">
+                      <img src="https://imgur.com/ef1Z4Tw.jpg" alt="" style="width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: inline-block; border-radius: 50%;">
+                      <h3 class="section-heading3-h3">Willam Clarson</h3>
+                      <p class="section-heading3-p1">Businessman</p>
+                      <p class="section-heading3-p2">Far far away, behind the word mountains, far from the countries</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 7: END -->
+
+
+          <!-- Main Row - 8: START -->
+          <tr>
+            <td class="row8" style="padding: 25px 30px; background-color: #f1f1f1;">
+              <table valign="top" cellspacing="0" cellpadding="0" border="0" width="100%" style="text-align: center; table-layout: fixed;">
+                <tr>
+                  <td style="padding: 0 10px;" class="ta-block">
+                    <img src="https://imgur.com/YglCwOa.jpg" alt="" style="width: 100%; display: block;">
+                  </td>
+                  <td class="para ta-block" style="padding: 0 10px; text-align: left;">
+                    <div class="ta-full-width center">
+                      <div class="row8-p">
+                        <h2>Things to know before traveling</h2>
+                      </div>
+                      <h3>1. Pack up your things</h3>
+                      <p>A small river named Duden flows by their place and supplies</p>
+                      <h3>2. Search for Destination</h3>
+                      <p>A small river named Duden flows by their place and supplies</p>
+                      <h3>3. Be Responsible</h3>
+                      <p>A small river named Duden flows by their place and supplies</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 8: END -->
+
+          <!-- Main Row - 9: START -->
+          <tr>
+            <td class="row9" style="background-color: #000000; padding: 40px;">
+              <table valign="top" cellspacing="0" cellpadding="0" border="0" width="100%" style="text-align: left;" class="ta-fixed-auto">
+                <tr>
+                  <td valign="top" class="ta-block center">
+                    <h2>About</h2>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                  </td>
+                  <td class="ta-block center">
+                    <h2>Contact Info</h2>
+                    <p>203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <p>+2 392 3929 210</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 9: END -->
+
+          <!-- Main Row - 10: START -->
+          <tr>
+            <td class="footer" style="background-color: #000000; #ffffff; padding: 40px;">
+              <table valign="middle" cellspacing="0" cellpadding="0" border="0" width="100%" style="text-align: left;" class="ta-fixed-auto">
+                <tr>
+                  <td class="ta-block center">© 2018 Travel. All Rights Reserved</td>
+                  <td style="text-align: right; color: rgba(255,255,255,.4)" class="ta-block">
+                    <p class="center">Unsubcribe</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 10: END -->
+
+        </table>
+      </div>
+    </center>
+  </body>
+</html>

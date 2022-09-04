@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./temp.css">
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*="margin: 16px 0"] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode:bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+      .unstyle-auto-detected-links *,
+      .aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+        color: inherit !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+
+      /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+      @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+        u ~ div .email-container {
+          min-width: 320px !important;
+        }
+      }
+      /* iPhone 6, 6S, 7, 8, and X */
+      @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+        u ~ div .email-container {
+          min-width: 375px !important;
+        }
+      }
+      /* iPhone 6+, 7+, and 8+ */
+      @media only screen and (min-device-width: 414px) {
+        u ~ div .email-container {
+          min-width: 414px !important;
+        }
+      }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+
+    <!-- CSS Main : START -->
+    <style>
+      * {
+/*                  outline: 1px solid limegreen;*/
+        /*          background: rgb(0 100 0 / 0.1);*/
+      }
+
+      .logo h1 a {
+        text-align: center;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        display: inline-block;
+        padding: 2px 2px;
+      }
+
+      .section-heading h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        font-size: 30px;
+        margin-bottom: 0;
+        font-weight: 500;
+      }
+      .para1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8;
+        color: rgba(255,255,255,.9);
+      }
+      .btn {
+        padding: 8px 14px;
+        border-radius: 5px;
+        background: #ea168e;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+      }
+
+      .section-heading2 h2 {
+        font-family: 'Poppins', sans-serif;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+
+      .para2 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+      }
+
+      .img-box h3 a {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.8;
+      }
+
+      .img-box h3 {
+        margin: 0;
+      }
+
+      .img-box p {
+        color:  rgba(255,255,255,.8);
+        font-family: 'Poppins', sans-serif;
+        font-size: 13px;
+        line-height: 1.8;
+        margin: 0;
+      }
+
+      .table-fixed-auto {
+        table-layout: fixed;
+      }
+
+      .div-mt {
+        margin-top: 100px;
+      }
+
+      .div-mt2 {
+        margin-top: 310px;
+      }
+
+      .div-mt3 {
+        margin-top: 160px;
+      }
+
+      .div-mt4 {
+        margin-top: 200px;
+      }
+
+    </style>
+    <!-- CSS Main : END -->
+
+    <style>
+      @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+        .table-fixed-auto {
+          table-layout: auto;
+        }
+
+        .table-block {
+          display: block;
+        }
+
+        .table-full-width {
+          width: 100%;
+          float: left;
+        }
+
+      }
+     </style>
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; font-family: sans-serif; background-color: #222222;">
+    <center style="width: 100%; background-color: #f1f1f1;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+
+          <!-- Main Row - 1: START -->
+          <tr>
+            <td style="background-color: #fff;">
+              <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td class="logo">
+                    <h1><a href="">PHOTOGRAPHY</a></h1>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 1: END -->
+
+          <!-- Main Row - 2: START -->
+          <tr>
+            <td style="background-image: url(https://imgur.com/M4mElbu.jpg); width: 100%; height: 400px; display: block; background-size: cover;">
+              <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="background-color: rgba(107,117,255,0.7);">
+                    <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td class="section-heading" style="height: 400px; padding: 0 64px;">
+                          <h2>Amazing Photography</h2>
+                          <p class="para1">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                          <a href="" class="btn">Start Shoping</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 2: END -->
+
+          <!-- Main Row - 3: START -->
+          <tr>
+            <td style="padding: 40px; background-color: #fff;">
+              <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%" class="table-fixed-auto">
+                <tr> <!-- frist row BEGIN -->
+                  <td colspan="2" class="section-heading2 table-block" style="padding: 0 30px;">
+                    <div>
+                      <h2>Gallery</h2>
+                      <p class="para2">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                  </td>
+                </tr>  <!-- frist row END -->
+                <tr>  <!-- second row BEGIN -->
+                  <td valign="top" class="table-block table-full-width">
+                    <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/jSEsrCK.jpg); width: 100%; max-width: 600px; height: 168px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Fashion</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/LEMLXYA.jpg); width: 100%; max-width: 600px; height: 168px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Nature</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style=" padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/BMw7E4s.jpg); width: 100%; max-width: 600px; height: 378px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt2">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Animals</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/A8GURqe.jpg); width: 100%; max-width: 600px; height: 224px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt3">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Model</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>  <!-- first td END -->
+                  <td valign="top" class="table-block table-full-width">
+                    <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/V9dUEZJ.jpg); width: 100%; max-width: 600px; height: 377px; background-size: cover; display: block;">
+                                <table valign="bottom" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt2">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Photography</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/m8AHjhY.jpg); width: 100%; max-width: 600px; height: 168px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Fashion</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/NUdjXQi.jpg); width: 100%; max-width: 600px; height: 167px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Fashion</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td style="padding: 3px;">
+                          <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                            <tr>
+                              <td style="background-image: url(https://imgur.com/Gfe9rvb.jpg); width: 100%; max-width: 600px; height: 268px; background-size: cover; display: block;">
+                                <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                                  <tr>
+                                    <td class="img-box">
+                                      <div class="div-mt4">
+                                        <h3><a href="">Album Name</a></h3>
+                                        <p>Nature</p>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>  <!-- second td END -->
+                </tr>  <!-- second row END -->
+              </table>
+            </td>
+          </tr>
+           <!-- Main Row - 3: END -->
+
+          <!-- Main Row - 4: START -->
+          <tr>
+            <td style="padding: 40px; background-color: #fff;">
+              <p class="para2" style="color: rgba(0,0,0,.8);">No longer want to receive these email? You can <a href="" class="para2" style="color: #ea168e;">Unsubscribe here</a></p>
+              <p class="para2" style="color: rgba(0,0,0,.8);">© 2018 Stories. All Rights Reserved</p>
+            </td>
+          </tr>
+          <!-- Main Row - 4: END -->
+        </table>
+      </div>
+    </center>
+  </body>
+</html>

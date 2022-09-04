@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+      }
+
+
+    </style>
+    <!-- CSS Reset : END -->
+
+
+    <!-- CSS Main : START -->
+    <style>
+      * {
+                  /* outline: 1px solid limegreen; */
+        /*          background: rgb(0 100 0 / 0.1);*/
+      }
+
+      .logo {
+        line-height: 1.8
+      }
+
+      .logo h1 {
+        font-family: sans-serif;
+        color: #000000;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+
+      .logo a{
+        font-family: 'Work Sans', sans-serif;
+        color: rgba(0,0,0,.4);
+        display: inline-block;
+        margin-left: 8px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .hero {
+        font-family: 'Work Sans', sans-serif;
+        color: #fff;
+        line-height: 1.8;
+        height: 400px;
+        padding: 0 60px;
+      }
+
+      .hero h2 {
+        font-size: 50px;
+        font-weight: 300;
+        line-height: 1;
+        margin-bottom: 10px;
+      }
+
+      .hero p{
+        font-weight: 400;
+        font-size: 15px;
+      }
+
+
+      .heading-section {
+        font-family: 'Work Sans', sans-serif;
+        color: #000000;
+        font-size: 28px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+      .heading-section p {
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+      }
+
+      .btn{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 15px;
+        line-height: 1.8;
+        border-radius: 30px;
+        background: #448ef6;
+        color: #ffffff;
+        padding: 5px 15px;
+        display: inline-block;
+        margin-bottom: 55px;
+      }
+
+      .btn2 {
+        border-radius: 30px;
+        background: #448ef6;
+        color: #ffffff;
+        padding: 5px 15px;
+        display: inline-block;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        margin-bottom: 15px;
+        margin-left: 2px;
+      }
+
+/*      left side    */
+
+      .img-box-left {
+        padding: 10px 5px;
+        text-align: left;
+      }
+
+      .img-box-left .para {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: rgba(0,0,0,.4);
+        padding: 0 2px;
+      }
+
+      .img-box-left .head3{
+        font-family: 'Work Sans', sans-serif;
+        color: #000000;
+        margin-top: 0;
+        font-weight: 400;
+        line-height: 1.8;
+        padding: 0 2px;
+      }
+
+      .img-box-left .para2 {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        padding: 0 2px;
+      }
+
+
+/*       right side      */
+
+      .img-box-right {
+        padding: 10px 5px;
+        text-align: left;
+      }
+
+      .img-box-right .para {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-bottom: 0;
+        color: rgba(0,0,0,.4);
+        padding: 0 2px;
+      }
+
+      .img-box-right .head3 {
+        font-family: 'Work Sans', sans-serif;
+        color: #000000;
+        margin-top: 0;
+        font-weight: 400;
+        line-height: 1.8;
+        padding: 0 2px;
+      }
+      .img-box-right .para2 {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0,0,0,.4);
+        padding: 0 2px;
+      }
+
+      .ta-fixed-auto {
+        table-layout: fixed;
+      }
+    </style>
+    <!-- CSS Main : END -->
+
+    <!-- Mob Responsive : START -->
+    <style>
+      @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+        .ta-fixed-auto {
+          table-layout: auto;
+        }
+        .ta-block {
+          display: block;
+        }
+
+        .ta-full-width {
+          width: 100%;
+          float: left;
+        }
+
+        .center {
+          text-align: center;
+        }
+
+        .left {
+          text-align: left;
+        }
+
+        .row2-h2 {
+          font-size: 44px !important;
+        }
+      }
+    </style>
+    <!-- Mob Responsive : END -->
+
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; font-family: 'Work Sans', sans-serif; background-color: #222222;">
+    <center style="width: 100%; background-color: #f1f1f1;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+
+          <!-- Main Row - 1: START -->
+          <tr>
+            <td style="padding: 1em 2.5em; background-color: #ffffff;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+                <tr>
+                  <td class="logo">
+                    <h1>STORIES</h1>
+                    <p>
+                      <a href="">Home</a>
+                      <a href="">About</a>
+                      <a href="">Blog</a>
+                      <a href="">Contact</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 1: END -->
+
+          <!-- Main Row - 2: START -->
+          <tr>
+            <td valign="middle" style="background-image: url(https://imgur.com/Cog1tF2.jpg); background-size: cover; height: 400px; display: block;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+                <tr>
+                  <td style="background-color: rgba(0, 0, 0, 0.3); height: 400px;">
+                    <table valign="middle" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+                      <td class="hero" style="height: 400px; padding: 0 60px;">
+                        <h2 class="row2-h2">We Create Modern Website</h2>
+                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <a href="" class="btn">Read more</a>
+                      </td>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 2: END -->
+
+          <!-- Main Row - 3: START -->
+          <tr>
+            <td style="padding: 2.5em; background-color: #ffffff;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;" class="ta-fixed-auto">
+                <tr>
+                  <td>
+                    <tr>
+                      <td colspan="2">
+                        <h2 class="heading-section">Our Blog</h2>
+                        <p style="color: rgba(0,0,0,.4);">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="img-box-left ta-block">
+                        <img src="https://imgur.com/AFPgaPd.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                      <td class="img-box-right ta-block">
+                        <img src="https://imgur.com/CBEeK02.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="img-box-left ta-block">
+                        <img src="https://imgur.com/J7qvRCc.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                      <td class="img-box-right ta-block">
+                        <img src="https://imgur.com/ryWllUZ.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="img-box-left ta-block">
+                        <img src="https://imgur.com/2y3fpih.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                      <td class="img-box-right ta-block">
+                        <img src="https://imgur.com/i0iu3G3.jpg" alt="" style="max-width: 100%; display: block;">
+                        <p class="para">POSTED ON FEB 18, 2019 FOOD</p>
+                        <h3 class="head3">Business Key to Success</h3>
+                        <p class="para2">Far far away, behind the word mountains, far from the countries</p>
+                        <a href="" class="btn2">Read more</a>
+                      </td>
+                    </tr>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 3: END -->
+
+          <!-- Main Row - 4: START -->
+          <tr>
+            <td style="text-align: left; padding: 40px; background-color: rgb(0, 0, 0); color: rgba(255,255,255,1);">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" class="ta-fixed-auto">
+                <tr>
+                  <td valign="top" style="padding: 10px;" class="ta-block">
+                    <h3>About</h3>
+                    <p style="color: rgba(255,255,255,.5); font-size: 15px; font-weight: 400 line-height: 1.8">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                  </td>
+                  <td valign="top" style="padding: 10px;" class="ta-block">
+                    <h3>Contact Info</h3>
+                    <p style="color: rgba(255,255,255,.5); font-size: 15px; font-weight: 400 line-height: 1.8">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                    <p>+2 392 3929 210</p>
+                  </td>
+                  <td valign="top" style="padding: 10px;" class="ta-block">
+                    <h3>Useful Links</h3>
+                    <p><a href="" style="color: white;">Home</a></p>
+                    <p><a href="" style="color: white;">About</a></p>
+                    <p><a href="" style="color: white;">Services</a></p>
+                    <p><a href="" style="color: white;">Work</a></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 4: END -->
+
+          <!-- Main Row - 5: START -->
+          <tr>
+            <td style="padding: 40px; background-color: rgb(0, 0, 0); color: rgba(255,255,255,.5);">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" class="ta-fixed-auto">
+                <tr>
+                  <td valign="top" style="text-align: left;" class="ta-block">
+                    <p>© 2018 Agency. All Rights</p>
+                    <p>Reserved</p>
+                  </td>
+                  <td valign="top" style="text-align: right;" class="ta-block">
+                    <p class="left">Unsubcribe</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 5: END -->
+
+          <!-- Main Row - 6: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 6: END -->
+
+          <!-- Main Row - 7: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 7: END -->
+
+          <!-- Main Row - 8: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 8: END -->
+
+          <!-- Main Row - 9: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 9: END -->
+
+          <!-- Main Row - 10: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 10: END -->
+
+          <!-- Main Row - 11: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 11: END -->
+
+          <!-- Main Row - 12: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 12: END -->
+
+          <!-- Main Row - 13: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 13: END -->
+
+          <!-- Main Row - 14: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 14: END -->
+
+          <!-- Main Row - 15: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 15: END -->
+
+          <!-- Main Row - 16: START -->
+          <tr>
+            <td></td>
+          </tr>
+          <!-- Main Row - 16: END -->
+        </table>
+      </div>
+    </center>
+  </body>
+</html>

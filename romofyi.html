@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+  <head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>romefyi</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,700" rel="stylesheet">
+    <link href="./temp.css" rel="stylesheet">
+
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        font
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      h1, h2, h3, p {
+        margin: 0;
+      }
+
+    </style>
+    <!-- CSS Reset : END -->
+
+
+
+    <style>
+      /* CSS Main : START */
+      * {
+        /* outline: 1px  solid limegreen; */
+        /*background: rgb(0 100 0 / 0.1);*/
+      }
+
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      ul li {
+        float: left;
+      }
+
+      .nav {
+        font-family: 'Poppins', sans-serif;
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+        display: inline-block;
+      }
+
+      li a:hover {
+       background-color: #f2c119;
+      }
+
+      .form-search {
+        border-radius: 20px;
+        padding: 8px 15px;
+      }
+
+      .logo2 {
+        color: #183661;
+        font-family: 'Righteous', cursive;
+        font-size: 50px;
+      }
+
+      .trend {
+        font-family: sans-serif;
+        color: #f2c119;
+        font-size: 60px
+      }
+
+      .para1 {
+        font-size: 26px;
+        color: #2a2a2c;
+        line-height: 30px;
+        padding-bottom: 10px;
+      }
+
+      .para2 {
+        font-family: 'Poppines', sans-serif;
+        color: #183661;
+        font-size: 17px;
+        padding-top: 5px;
+        display: block;
+      }
+
+      .para3 {
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 32px;
+        text-align: left;
+        font-weight: 400;
+        padding: 5px 10px;
+      }
+
+      .btn1 {
+        font-weight: 500;
+        background: #1d37fd;
+        color: #fff;
+        border-radius: 20px;
+        padding: 10px 15px;
+        display: inline-block;
+      }
+
+      .btn2 {
+        font-family: 'Poppines', sans-serif;
+        text-transform: none;
+        color: #fff;
+        background: #183661;
+        padding: 12px 30px;
+        border-radius: 25px;
+      }
+
+      .btn3 {
+        padding: 5px 15px;
+        margin-left: 198px !important;
+        font-size: 16px;
+        background: #183661;
+        color: #fff;
+        border-radius: 30px;
+        display: inline-block;
+      }
+
+      .subs-btn4 {
+        padding-top: 0;
+      }
+
+      .price {
+        color: #1c1c1b;
+        font-size: 15px;
+        line-height: 20px;
+        padding: 5px;
+        text-align: center;
+      }
+
+      .heading {
+        font-family: 'Poppines', sans-serif;
+        color: #141414;
+        font-weight: bold;
+        padding-bottom: 10px;
+        font-size: 15px;
+      }
+
+      .products-heading {
+        font-family: 'Poppines', sans-serif;
+        text-align: left;
+        font-size: 25px;
+        color: #141414;
+        border-bottom: 4px solid #f2c119;
+        padding-bottom: 4px;
+        margin: 30px 35px;
+      }
+
+      .news-heading {
+        font-family: 'Poppines', sans-serif;
+        text-align: left;
+        font-size: 25px;
+        color: #141414;
+        border-bottom: 3px solid #f2c119;
+        padding-bottom: 6px;
+        margin: 30px 35px;
+      }
+
+      .span1 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+        font-weight: normal;
+        border-bottom: #f2c119 solid 1px;
+        padding-bottom: 4px;
+        color: #141414;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 2px;
+      }
+
+      .span2 {
+        font-family: 'Poppins', sans-serif;
+        line-height: 1.8;
+        font-weight: normal;
+        border-bottom: #f2c119 solid 1px;
+        padding-bottom: 4px;
+        color: #141414;
+        font-size: 15px;
+        display: inline-block;
+        margin-left: 184px;
+      }
+
+      .subscribe {
+        font-family: 'Poppines', sans-serif;
+        color: #141414;
+        font-size: 16px;
+        text-align: left;
+        padding: 0 9px;
+      }
+
+      .email {
+        border-radius: 20px;
+        padding: 7px;
+        width: 300px;
+
+      }
+
+      .offer {
+        border-spacing: 25px;
+      }
+
+      .fotter-heading {
+        font-family: sans-serif;
+        font-size: 17px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-bottom: 20px;
+        font-weight: 600;
+        padding: 0 10px;
+        text-align: left;
+      }
+
+      .fotter-bottom {
+        font-family: sans-serif;
+        color: #292929;
+        font-size: 15px;
+        line-height: 22px;
+      }
+
+      .table-fixed-auto {
+        table-layout: fixed;
+      }
+
+      .width2 {
+        width: 35%;
+      }
+
+      .width3 {
+        width: 65%;
+        padding-left: 10px;
+        text-align: left;
+      }
+
+      .center2 {
+        padding: 0 5px;
+        text-align: left;
+      }
+      /* CSS Main : END */
+
+
+      /* Mob Responsive : START */
+    @media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+      .table-fixed-auto {
+        table-layout: auto;
+      }
+
+      .table-block {
+        display: block !important;
+      }
+
+      .center {
+        text-align: center !important;
+        padding: 15px 30px !important;
+      }
+
+      .center2 {
+        padding: 0 5px;
+        text-align: center !important;
+      }
+
+      .width {
+        width: 100% !important;
+      }
+
+      .width2 {
+        width: 100% !important;
+
+      }
+
+      .width3 {
+        width: 100% !important;
+        padding: 20px 0 !important;
+      }
+
+      .margin {
+        margin-left: 330px !important;
+      }
+
+      .news-img {
+        padding: 15px 35px;
+      }
+
+      .subscribe {
+        font-family: 'Poppines', sans-serif;
+        color: #141414;
+        font-size: 20px;
+        text-align: center;
+        padding-bottom: 10px;
+      }
+
+      .email {
+        border-radius: 20px;
+        padding: 7px;
+        width: 400px;
+      }
+
+      .btn3 {
+        padding: 5px 15px;
+        margin:0 !important;
+        font-size: 16px;
+        background: #183661;
+        color: #fff;
+        border-radius: 30px;
+        display: inline-block;
+      }
+
+      .subs-btn4 {
+        padding-top: 10px;
+      }
+
+    }
+      /* Mob Responsive : END */
+    </style>
+  </head>
+  <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #fff;">
+    <center style="width: 100%; background-color: #fff;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="text-align: center;">
+
+          <!-- Main Row - 1: START -->
+          <tr>
+            <td>
+              <table valign="0" cellpadding="0" cellspacing="0" border="0" width="100%" class="table-fixed-auto;">
+                <tr>
+                  <td style="padding: 20px 15px;">
+                    <a href=""><img src="https://imgur.com/yqUAZyB.png" alt=""></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 1: END -->
+
+          <!-- Main Row - 2: START -->
+          <tr>
+            <td style="background-color: #183661;">
+              <table valign="0" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="padding: 15px 0;">
+                    <a href="" class="nav">HOME</a>
+                    <a href="" class="nav">ABOUT</a>
+                    <a href="" class="nav">PRODUCTS</a>
+                    <a href="" class="nav">FASHION</a>
+                    <a href="" class="nav">NEWS</a>
+                    <a href="" class="nav">CONTACT US</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:15px 20px;">
+                    <form action="">
+                      <input type="search" name="" placeholder="Search" style="width: 400px;" class="form-search">
+                    </form>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 2: END -->
+
+          <!-- Main Row - 3: START -->
+          <tr>
+            <td style="height:180px; background: url(https://imgur.com/JVqCYOJ.png) no-repeat top center/cover;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="height: 140px; padding:15px 0">
+                    <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td style="padding: 0 0 0 25px; text-align: left;" class="table-block center">
+                          <h2 class="logo2">romofyi</h2>
+                          <h3 class="trend">Trand 2021</h3>
+                          <p class="para1">A huge fashion collection for ever</p>
+                          <p><a href="" class="btn1">SHOP NOW</a></p>
+                        </td>
+                        <td style="padding: 0 20px;" class="table-block center">
+                          <img src="https://imgur.com/xqmvtMD.png" alt="" style="width: auto; height: 210px; background-size: cover; display: inline-block;">
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 3: END -->
+
+          <!-- Main Row - 4: START -->
+          <tr>
+            <td style="padding: 10px 0;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td valign="top" style="background-color: #f2c119;">
+                    <img src="https://imgur.com/l1Ey96w.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">SHOES</p>
+                  </td>
+                  <td valign="top" style="background-color: #183661;">
+                    <img src="https://imgur.com/0zBXCA3.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">UNDERWEAR</p>
+                  </td>
+                  <td valign="top" style="background-color: #f2c119;">
+                    <img src="https://imgur.com/DIVqB43.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">PANTE & SOCKS</p>
+                  </td>
+                  <td valign="top" style="background-color: #183661;">
+                    <img src="https://imgur.com/tnZjrJP.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">T-SHIRT & TANKSTOP</p>
+                  </td>
+                  <td valign="top" style="background-color: #f2c119;">
+                    <img src="https://imgur.com/vqRx629.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">CARDIGANS & JUMPERS</p>
+                  </td>
+                  <td valign="top" style="background-color: #183661;">
+                    <img src="https://imgur.com/1riXozq.png" alt="#">
+                    <p style="font-size: 14px; color: #fff;">TOP & HAT</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 4: END -->
+
+          <!-- Main Row - 5: START -->
+          <tr>
+            <td style="background: url(https://imgur.com/nP3BNsY.png) no-repeat top center/cover;">
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" class="table-fixed-auto">
+                <tr>
+                  <td style="height: 450px;">
+                    <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%">
+                      <tr>
+                        <td colspan="3">
+                          <h3 class="products-heading">Featured Products</h3>
+
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://imgur.com/NUJvXHQ.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/7qtd464.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/SgeaY9j.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://imgur.com/uD36GIM.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/CAAOt8j.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/nQ3Hw7U.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <img src="https://imgur.com/V1s5iQn.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/AOVP90g.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                        <td>
+                          <img src="https://imgur.com/vYXUVOs.png" alt="">
+                          <p class="price">Cardigan $120.00</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="3" style="padding: 40px 10px;">
+                          <a href="" class="btn2">See More</a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 5: END -->
+
+          <!-- Main Row - 6: START -->
+          <tr>
+            <td class="table-block">
+              <img src="https://imgur.com/nJfatoH.jpg" alt="" style="width: 100%; background-size: cover; display: block;">
+            </td>
+          </tr>
+          <!-- Main Row - 6: END -->
+
+          <!-- Main Row - 7: START -->
+          <tr>
+            <td>
+              <table valign="top" cellpadding="0" cellspacing="0" border="0" width="100%" style="">
+                <tr>
+                  <td colspan="2">
+                    <h3 class="news-heading">Latest News</h3>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-block width2">
+                    <div class="news-img">
+                      <img src="https://imgur.com/xPTLsYw.jpg" alt="" style="width: 100%; background-size: cover; display: block;">
+                    </div>
+                  </td>
+                  <td class="table-block width3">
+                    <div class="news-img">
+                    <h3 class="heading">Specimen book. It has survived not only five</h3>
+                    <span class="span1">7 July 2019</span>
+                    <span class="span2 margin">Like Comment</span>
+                    <p style="padding-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-block width2">
+                    <div class="news-img">
+                      <img src="https://imgur.com/3mffwPY.jpg" alt="" style="width: 100%; background-size: cover; display: block;">
+                    </div>
+                  </td>
+                  <td class="table-block width3">
+                    <div class="news-img">
+                      <h3 class="heading">Specimen book. It has survived not only five</h3>
+                      <span class="span1">7 July 2019</span>
+                      <span class="span2 margin">Like Comment</span>
+                      <p style="padding-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="table-block width2">
+                    <div class="news-img">
+                      <img src="https://imgur.com/PKjvNyP.jpg" alt="" style="width: 100%; background-size: cover; display: block;">
+                    </div>
+                  </td>
+                  <td class="table-block width3">
+                    <div class="news-img">
+                      <h3 class="heading">Specimen book. It has survived not only five</h3>
+                      <sppan class="span1">7 July 2019</sppan>
+                      <span class="span2 margin">Like Comment</span>
+                      <p style="padding-top: 10px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 7: END -->
+
+          <!-- Main Row - 8: START -->
+          <tr>
+            <td style="padding: 25px 0;">
+              <table valign="0" cellpadding="0" cellspacing="0" border="0" width="100%" class="table-fixed-auto">
+                <tr>
+                  <td style="width: 40%;" class="table-block width">
+                    <div>
+                      <h4 class="subscribe" style="margin: 0;">Subscribe To The Newsletter</h4>
+                    </div>
+                  </td>
+                  <td style="width: 60%;" class="table-block width">
+                    <div class="subscribe">
+                      <form action="">
+                        <input type="search" placeholder="Enter your email" class="email"><br>
+                        <div class="subs-btn4">
+                          <a href="" class="btn3">Subscribe</a>
+                        </div>
+                      </form>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 8: END -->
+
+          <!-- Main Row - 9: START -->
+          <tr>
+            <td style="background-color: #183661;">
+              <table valign="0" cellpadding="0" cellspacing="0" border="0" width="100%" class="offer">
+                <tr>
+                  <td style="border-radius: 20px; padding: 30px 0; background: #fff;" class="table-block">
+                    <img src="https://imgur.com/67wxnqx.png" alt="">
+                    <p class="para2">Money Back</p>
+                  </td>
+                  <td style="border-radius: 20px; padding: 30px 0; background: #fff;" class="table-block">
+                    <img src="https://imgur.com/iX1QfDX.png" alt="">
+                    <p class="para2">Special Gift</p>
+                  </td>
+                  <td style="border-radius: 20px; padding: 30px 0; background: #fff;" class="table-block">
+                    <img src="https://imgur.com/CZp0kuS.png" alt="">
+                    <p class="para2">Free Shipping</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 9: END -->
+
+          <!-- Main Row - 10: START -->
+          <tr>
+            <td style="background-color: #0e274c; color: #fff;">
+              <table valign="0" cellpadding="0" cellspacing="0" border="0" width="100%" style="table-layout: fixed;">
+                <tr>
+                  <td valign="top" style="padding: 0 5px;" class="table-block center2">
+                    <h4 class="fotter-heading">INFORMATION</h4>
+                    <p class="para3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </td>
+                  <td valign="top" style="padding: 0 5px;" class="table-block center2">
+                    <h4 class="fotter-heading">MY ACCOUNT</h4>
+                    <p class="para3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </td>
+                  <td valign="top" style="padding: 0 5px;" class="table-block center2">
+                    <h4 class="fotter-heading">ABOUT</h4>
+                    <p class="para3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </td>
+                  <td valign="top" style="padding: 0 5px;" class="table-block center2">
+                    <h4 class="fotter-heading">CONTACTS</h4>
+                    <p class="para3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- Main Row - 10: END -->
+
+          <!-- Main Row - 11: START -->
+          <tr>
+            <td class="fotter-bottom" style="padding: 15px 0;">
+              <p>© 2019 All Rights Reserved. Design by Free Html Templates</p>
+            </td>
+          </tr>
+          <!-- Main Row - 11: END -->
+        </table>
+      </div>
+    </center>
+  </body>
+</html>
